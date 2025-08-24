@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wellcome</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:rgb(0, 102, 128);
+            
+        }
+        div{
+            background-color: rgba(1, 1, 112, 0.685);
+            opacity: 0.9;
+            width: 380px;
+            height: 300px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 10px;
+            padding: 5px 10px;
+            box-shadow: 0  0  20px rgba(0, 0, 0, 0.5);
+            color: aliceblue;
+        }
+        p{
+            font-size: 40px;
+        }
+        button{
+            background-color: black;
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
+            margin:20px;
+        }
+        a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .delete_btn{
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <% datas.forEach(item =>{ %>
+        <div>
+            
+            <p><%= item.name %></p>
+            <p><%= item.email %></p>
+            <p><%= item.password %></p>
+         <a href="/back"><button>back</button></a>
+            <a href="/next"><button>next</button></a>
+            <a href="/delete/<%= item.id%>"><button class="delete_btn">delete</button></a>
+        </div>
+
+   <% })%>
+</body>
+</html>
