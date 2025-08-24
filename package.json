@@ -1,0 +1,16 @@
+{
+  "name": "future",
+    "version": "1.0.0",
+    "description": "My first hosting",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongoose": "^8.17.1"
+  },
+"main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+
+  
+}
